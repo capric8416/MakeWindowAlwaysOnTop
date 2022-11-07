@@ -16,7 +16,7 @@ public:
 
 
     // 取消窗口置顶
-    static void unset(HWND wid) {
+    static void Unset(HWND wid) {
         // 将窗口置于所有非顶层窗口之上，实际表现就是取消了TOPMOST属性
         SetWindowPos(wid, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
     }
